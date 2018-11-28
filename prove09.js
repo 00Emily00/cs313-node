@@ -16,7 +16,7 @@ function calculateRate(req, res) {
             else(weight > 1 && weight < 3.5)    
                 cost = .47 + .21 * (weight - 1);
             else
-                document.write("mail is greater than 3.5 oz, use large envelopes");
+                alert("mail is greater than 3.5 oz, use large envelopes");
             break;
         case "Large Envelopes (Flats)":
             if(weight <= 1)
