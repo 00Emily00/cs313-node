@@ -1,7 +1,3 @@
-var express = require('express');
-var app = express();
-
-
 function calculateRate(req, res) {
     const weight = req.query.weight;
     const mail = req.query.mail;
