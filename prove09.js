@@ -8,19 +8,19 @@ function calculateRate(req, res) {
             if(weight <= 1)
                 cost = .50;
             else
-               cost = .50 + .21 * weight - 1;
+               cost = .50 + .21 * (weight - 1);
             break;
         case "Letters (Metered)":
             if(weight <= 1)
                 cost = .47;
             else    
-                cost = .47 + 21 * weight - 1;
+                cost = .47 + 21 * (weight - 1);
             break;
         case "Large Envelopes (Flats)":
             if(weight <= 1)
                 cost = 1;
             else
-                cost = 1 + .21 * weight - 1;
+                cost = 1 + .21 * (weight - 1);
             break;
         case "First-Class Package Service-Retail":
             if(weight <= 4)
@@ -30,7 +30,7 @@ function calculateRate(req, res) {
             else if(weight == 9)
                 cost = 4.10;
             else
-                cost = 4.45 + .35 * weight - 10;
+                cost = 4.45 + .35 * (weight - 10);
         default:
             break;
     }
