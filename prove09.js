@@ -35,7 +35,7 @@ function calculateRate(req, res) {
             break;
     }
 
-    res.render("pages/prove09", {results: cost});
+    res.render("pages/prove09", {results: cost.toFixed(2)});
     
 }
 
