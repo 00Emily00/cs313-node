@@ -34,6 +34,9 @@ function calculateRate(req, res) {
         default:
             break;
     }
+
+    res.render("pages/prove09", {results: cost});
+    
 }
 
 
