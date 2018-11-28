@@ -4,22 +4,22 @@ function calculateRate(req, res) {
     
     let cost = 0;
     switch(mail)
-        case: "Letters (Stamped)":
+        case "Letters (Stamped)":
             if(weight <= 1)
                 cost = .50;
             else
                cost = .50 + .21 * weight - 1;
-        case: "Letters (Metered)":
+        case "Letters (Metered)":
             if(weight <= 1)
                 cost = .47;
             else    
                 cost = .47 + 21 * weight - 1;
-        case: "Large Envelopes (Flats)":
+        case "Large Envelopes (Flats)":
             if(weight <= 1)
                 cost = 1;
             else
                 cost = 1 + .21 * weight - 1;
-        case: "First-Class Package Service-Retail":
+        case "First-Class Package Service-Retail":
             if(weight <= 4)
                 cost = 3.50;
             else if(weight >= 5 && weight <= 8)
