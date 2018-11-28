@@ -3,7 +3,7 @@ function calculateRate(req, res) {
     const mail = req.query.mail;
     
     let cost = 0;
-    switch(mail)
+    switch(mail) {
         case "Letters (Stamped)":
             if(weight <= 1)
                 cost = .50;
@@ -33,7 +33,7 @@ function calculateRate(req, res) {
                 cost = 4.45 + .35 * weight - 10;
         default:
             break;
-    
+    }
 }
 
 
